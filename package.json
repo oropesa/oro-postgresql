@@ -1,0 +1,31 @@
+{
+  "name": "oro-postgresql",
+  "version": "1.0.0",
+  "description": "Class OroPostgresql is a wrapper of npm-postgres to use it async/await",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "postgresql",
+    "promise",
+    "async/await"
+  ],
+  "author": "Carlos Oropesa <carlos.oropesa@maresalogistica.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oropesa/oro-postgresql.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oropesa/oro-postgresql/issues"
+  },
+  "homepage": "https://github.com/oropesa/oro-postgresql#readme",
+  "dependencies": {
+    "oro-functions": "^1.1.5",
+    "pg": "^8.7.3"
+  },
+  "devDependencies": {
+    "jest": "^28.1.0"
+  }
+}

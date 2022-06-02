@@ -1,4 +1,7 @@
 ## 1.0.0 / 2022-06-01
+* Misc, allow to export _class_ `ResultArray`.
+
+## 1.0.0 / 2022-06-01
 * Added `MIT License`.
 * Added _unit testing_ `Jest`.
 * Added _package_ in `github.com` & `npmjs.com`.

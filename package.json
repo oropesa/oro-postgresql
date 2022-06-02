@@ -1,6 +1,6 @@
 {
   "name": "oro-postgresql",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Class OroPostgresql is a wrapper of npm-postgres to use it async/await",
   "main": "index.js",
   "scripts": {

@@ -312,4 +312,4 @@ class OPsql {
     }
 }
 
-module.exports = { OPsql };
+module.exports = { OPsql, ResultArray };

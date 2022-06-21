@@ -1,4 +1,8 @@
-## 1.0.0 / 2022-06-01
+## 1.0.2 / 2022-06-21
+* Updated lib `oro-functions` to `v1.1.7`.
+* Updated lib-dev `jest` to `v28.1.1`.
+
+## 1.0.1 / 2022-06-01
 * Misc, allow to export _class_ `ResultArray`.
 
 ## 1.0.0 / 2022-06-01

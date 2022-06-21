@@ -94,7 +94,7 @@ describe('query INSERT', () => {
         let lastQuery = oPsql.getLastQuery();
 
         expect( result ).toBe( true );
-        expect( lastQuery.constructor.name ).toBe( 'ResultArray' );
+        expect( Ofn.type( lastQuery, true ) ).toBe( 'ResultArray' );
         expect( lastQuery.count ).toBe( 1 );
         expect( lastQuery.status ).toBe( true );
     } );
@@ -173,7 +173,7 @@ describe('query UPDATE', () => {
 
         let lastQuery = oPsql.getLastQuery();
 
-        expect( result.constructor.name ).toBe( 'ResultArray' );
+        expect( Ofn.type( result, true ) ).toBe( 'ResultArray' );
         expect( lastQuery.count ).toBe( 1 );
         expect( lastQuery.status ).toBe( true );
     } );
@@ -218,7 +218,7 @@ describe('query SELECT', () => {
         let result = await oPsql.query( `SELECT * FROMM test_easy` );
         await oPsql.poolClose();
 
-        expect( result.constructor.name ).toBe( 'ResultArray' );
+        expect( Ofn.type( result, true ) ).toBe( 'ResultArray' );
         expect( result.status ).toBe( false );
         expect( result.error.msg ).toMatch( /(error: syntax error at or near )/ );
     } );
@@ -231,7 +231,7 @@ describe('query SELECT', () => {
         let result = await oPsql.query( `SELECT * FROM test_easy` );
         await oPsql.poolClose();
 
-        expect( result.constructor.name ).toBe( 'ResultArray' );
+        expect( Ofn.type( result, true ) ).toBe( 'ResultArray' );
         expect( result.status ).toBe( true );
         expect( result.count ).toBe( 3 );
     } );

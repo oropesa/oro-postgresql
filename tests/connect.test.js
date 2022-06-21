@@ -15,7 +15,7 @@ describe('get OPsql defaults', () => {
 
         let client = oPsql.getClient();
         expect( Ofn.isObject( client ) ).toBe( true );
-        expect( client.constructor.name ).toBe( 'BoundPool' );
+        expect( Ofn.type( client, true ) ).toBe( 'BoundPool' );
     } );
 
     test( 'get db con', async () => {
@@ -26,7 +26,7 @@ describe('get OPsql defaults', () => {
         await oPsql.poolClose();
 
         expect( poolOpen.status ).toBe( true );
-        expect( db.constructor.name ).toBe( 'Client' );
+        expect( Ofn.type( db, true ) ).toBe( 'Client' );
     } );
 
     test( 'get default settings', async () => {
